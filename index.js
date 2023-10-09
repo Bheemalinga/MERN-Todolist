@@ -4,6 +4,7 @@ const app = express();
 
 const port = process.env.PORT || 7000;
 
+// This snippet of code is used to handle Cross origin Resource Sharing(CORS) error
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
