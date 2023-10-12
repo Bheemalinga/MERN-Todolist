@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema; // Importing the Schema class from Mongoose
 
 const TodoSchema = new Schema({
   action: {
