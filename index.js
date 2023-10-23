@@ -6,7 +6,7 @@ require("dotenv").config();
 
 const app = express();
 
-const port = process.env.PORT || 7000;
+const port = process.env.PORT || 3000;
 
 // Connecting to Database
 mongoose
@@ -43,7 +43,7 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(port, () => {
-  if (port == 7000) {
+  if (port == 3000) {
     console.log(`Server is running on "http://localhost:${port}"`);
   }
 });
